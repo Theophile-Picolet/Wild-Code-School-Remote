@@ -1,0 +1,8 @@
+nav {
+    p {font-size: 2rem;}
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+}
