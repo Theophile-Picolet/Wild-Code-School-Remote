@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+    padding-top: 1rem;
+    background: #018c9b;
+    height: 19rem;
+    width: auto;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 15rem;
+        width: 100%;
+        color: #F9EDC8;
+        padding-bottom: 1rem;
+        .logo {
+            background-image: url(./Logo.png);
+            opacity: 0.7;
+            width:4rem;
+            height: 4rem;
+            background-size: 100%;
+            background-position: center;
+            box-shadow: rgba(5, 5, 5, 0.372) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.172) 0px -6px 0px inset;
+            border-radius: 100%;
+            
+            
+           
+        }
+        .account {
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+            background: #F9EDC8;
+            color: #4f3f34 ;
+            font-weight: 700;
+            border: 3px solid #4f3f34;
+            border-radius: 25px;
+            box-shadow: rgba(5, 5, 5, 0.678) 0px 4px 8px, rgba(0, 0, 0, 0.39) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset;
+            
+        }
+        
+    }
+ }
+
+.baseline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;  
+ }
+
+ .baseline div {
+    font-size: 1.5rem;
+    color: #F9EDC8;
+    letter-spacing: 4px;
+    text-shadow: #544135 3px 3px, #4f3f3400 -3px 3px, #4f3f3400 -3px -3px, #4f3f3400 3px -3px;
+ }
+
+ h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    color: #F9EDC8;
+    text-shadow: #544135 1x 1px, #4f3f34 -1px 1px, #4f3f34 -1px 1px, #4f3f34 1px -1px;
+    letter-spacing: 1px
+ }
+
+.main {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70rem;
+    width: 100%;
+    color: #f9edc8;
+    .account {
+      font-size: 2rem;
+    }
+  }
+
+
+.button .baseline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.baseline div {
+  font-size: 2rem;
+  color: #f9edc8;
+  letter-spacing: 4px;
+  text-shadow: #544135 2px 2px, #4f3f34 -2px 2px, #4f3f34 -2px -2px,
+    #4f3f4f 2px -2px;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  color: #f9edc8;
+  text-shadow: #544135 5px 5px, #4f3f34 -5px 5px, #4f3f34 -5px -5px,
+    #4f3f4f 5px -5px;
+  letter-spacing: 10px;
+}
+
+.main {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./WorldMap.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-position: fixed;
+}
+
+.Quizz {
+    margin: 0;
+    height: 40rem;
+    background-image: url(./WorldMap.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .jeu {
+        border: 3px solid #4f3f34;
+        border-radius: 50px;
+        background: #f9edc8d7;
+        padding: 1rem 0 2rem;
+    }
+    .question {
+        min-width: 68vh;
+        height: 15rem;
+        text-align: center;
+        padding-top: 2rem;
+        color: #4f3f34;
+        font-size: 1.5rem;
+
+    }
+    .reponse {
+        min-width: 68vh;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        padding: 0 4rem;
+        justify-items: center;
+        align-items: center;
+        
+        button {
+            width: 7rem;
+            height: 3rem;
+            background: #4f3f34;
+            border-radius: 15px;
+            box-shadow: rgba(5, 5, 5, 0.318) 0px 4px 8px, rgba(0, 0, 0, 0.27) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset;
+            color: #F9EDC8;
+        }
+    }
+    .aside {
+        min-width: 68vh;
+    display: flex;
+    height: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    .timer, .point {
+        width: 50px;
+        color: #018c9b;
+        font-size: 2rem; 
+    }
+   
+ }
+
+
+.container {
+  width: auto;
+  height: auto;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+  }
+
+section {
+        margin: 0;
+        width: 350px;
+        height: 195px;
+        text-align: center;
+        font-size: 5rem;
+        color: rgb(255, 255, 255);
+        font-weight: 50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #4f3f34;
+        border-radius: 30px;
+        box-shadow: rgb(5, 5, 5) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.357) 0px -6px 0px inset;
+        p {
+            font-size: 4rem;
+            letter-spacing: 5px;
+            text-shadow: #000000 2px 2px, #010101 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+        }
+}
+
+    .europe {
+        background-image: url(./Paris.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }
+    .africa {
+        background-image: url(./Africa.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }
+    .asia {
+        background-image: url(./Asia.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }  
+    .america {
+        background-image: url(America.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }  
+    .australia {
+        background-image: url(./Australia.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }
+}
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #018c9b;
+        color:#F9EDC8 ;
+        height: 5rem;
+    }
+
+    @media only screen and (min-width:68.5vh) {
+ 
+        
+        .header {
+            height: 24rem;
+            width: auto;
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 70rem;
+                width: 100%;
+                color: #F9EDC8;
+                .account {
+                    font-size: 1.5rem;
+                    padding: 1rem 2rem;
+                }      
+            }
+         }
+
+         .header nav {
+            padding-top: 2rem;
+            padding-bottom: 0;
+         }
+
+        
+         .baseline div {
+            font-size: 2rem;
+            padding: 1rem 0;
+            letter-spacing: 4px;
+            text-shadow: #544135 3px 3px, #4f3f3400 -3px 3px, #4f3f3400 -3px -3px, #4f3f3400 3px -3px;
+         }
+        
+         h1 {
+            font-size: 6rem;
+            font-weight: 500;
+            letter-spacing: 10px;
+            padding: 0;
+         }
+        
+        .main {
+            display: flex; 
+        }
+        
+        .Quizz {
+            display: none;
+        }
+           
+        }
+        
+    
+    
