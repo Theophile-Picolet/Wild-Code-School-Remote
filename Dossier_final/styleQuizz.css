@@ -26,13 +26,10 @@
     }
         nav {
         padding-bottom: 0rem;
-            .logo {
-            background-image: url(./Logo.png);
+        .logo img {
             opacity: 0.7;
-            width:4rem;
-            height: 4rem;
-            background-size: 100%;
-            background-position: center;
+            width:5rem;
+            height: 5rem;
             box-shadow: rgba(5, 5, 5, 0.372) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.172) 0px -6px 0px inset;
             border-radius: 100%;
                 }     
@@ -117,6 +114,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+         border: 3px solid #4f3f34;
+    border-radius: 50px;
+    background: linear-gradient(#006d7915, #018c9be1);
     }
     .titleEnd h2 {
         padding-top: 5rem;
@@ -125,6 +125,9 @@
         letter-spacing: 4px;
         text-align: center;
         line-height: 6rem;
+        color: #f9edc8;
+        text-shadow: #544135 7px 7px, #4f3f34  7px 7px, #4f3f34  7px  7px,
+          #4f3f4f 7px  7px;
     }
 
     .scorefinal, .messageScoreFinal {
@@ -132,6 +135,9 @@
         font-size: 2rem;
         text-align: center;
         font-weight: bold;
+        color: #4f3f34;
+        text-shadow: #F9EDC8 7px 7px, #F9EDC8  7px 7px, #F9EDC8  7px  7px,
+          #F9EDC8 7px  7px;
     }
  
     .footer {

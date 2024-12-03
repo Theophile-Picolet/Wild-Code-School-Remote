@@ -1,20 +1,4 @@
 
-// function apparitionDivQuestionsAsia() {
-//   const blocPays = document.querySelector(".main");//prendre le bon nom de class
-//   // je récupère le bloc qui contient les pays OU le main
-//   console.log(blocPays);
-//   blocPays.addEventListener('click', function () {
-//       // j'écoute les événements sur blocPays
-//      blocPays.style.display = 'none';// je fais disparaitre mon bloc Pays en modifiant uniquement la ligne dislay de son css
-//       const blocQuestions = document.querySelector(".Quizz");//prendre le bon nom de class
-//       blocQuestions.style.display = 'flex';//je rends visible le blocQuestions en modifiant uniquement la ligne display de son CSS
-//       });
-// };
-// apparitionDivQuestionsAmerica();
-
-
-
-
 const questionsAmerica = [
   {
       question : "Quel a été le meilleur président de toute l’histoire des Etats-Unis ?",
@@ -33,14 +17,16 @@ const questionsAmerica = [
   }
 ];
 
+
 let questionToDisplay = 0;
 let score = 0;
 
+ 
+    
+    function displayQuestionAmerica() {
 
-function displayQuestionAmerica() {
-    const questionDiv = document.querySelector(".question");
-    // questionDiv.innerHTML = "";
-    // if(questionToDisplay < questionsEurope.length) {
+    // si on veut rajouter un timer:
+    // if(questionToDisplay < questionsAmerica.length) {
     // function timer () {
     //     let time = 4;
     //     setInterval(() => {
@@ -54,25 +40,26 @@ function displayQuestionAmerica() {
     // }, 1000)}};
     // timer();
 
-    // if(questionToDisplay === questionsAmerica.length) {
-    // const card = document.createElement("div");
-    // card.classList.add("card");
-    // questionDiv.appendChild(card);
-    // let aside = document.createElement("div");
-    // questionDiv.appendChild(aside);
-    // let total = document.createElement("div");
-    // aside.appendChild(total);
-    // const finJeu = document.createElement("h2");
-    // card.innerText = "Fin du jeu"
-    // card.appendChild(finJeu);
-    // };
+    if(questionToDisplay === questionsAmerica.length) {
+        let quizz = document.querySelector(".Quizz");
+        quizz.style.display="none"; 
+        let message = document.querySelector(".titleEnd");
+        const question = document.createElement("h2");
+        question.innerText = "End Game";
+        message.appendChild(question);
+        let messageScoreFinal = document.querySelector(".messageScoreFinal");
+        messageScoreFinal.innerText = "Votre score est de :";
+        let scoreFinal= document.querySelector(".scorefinal");
+        scoreFinal.innerText = `${score} /3`;
+    };
 
+  
     let reponse = document.querySelector(".reponse");
     let title = document.querySelector(".title");
     let aside = document.querySelector(".aside");
-    let clock = document.createElement("div");
-    aside.appendChild(clock);
-    let total = document.createElement("div");
+    // let clock = document.createElement("div");
+    // aside.appendChild(clock);
+    let total = document.querySelector(".score");
     aside.appendChild(total);
     total.innerText = `${score} /3`;
 
@@ -80,14 +67,15 @@ function displayQuestionAmerica() {
  // création du H2
     const question = document.createElement("h2");
     question.innerText = questionsAmerica[questionToDisplay].question;
-    card.appendChild(question);
+    title.appendChild(question);
     //création du bouton
-    reponse.innerHTML = "";
+    reponse.innerHTML= "";
     questionsAmerica[questionToDisplay].answers.forEach((answer) => {
         
         const button = document.createElement("button");
         button.textContent = answer;
         reponse.appendChild(button);
+
         button.addEventListener("click",() => {
             if (button.textContent === questionsAmerica[questionToDisplay].correctAnswer) {
                 alert("Bonne réponse");
@@ -97,10 +85,12 @@ function displayQuestionAmerica() {
             } else {
                 alert("Mauvaise réponse");
                 total.innerHTML = "";
+                
             }
             questionToDisplay++;
             displayQuestionAmerica();
             })
     }); 
 };
+
 displayQuestionAmerica();

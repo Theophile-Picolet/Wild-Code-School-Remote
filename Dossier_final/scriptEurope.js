@@ -6,9 +6,9 @@ const questionsEurope = [
         correctAnswer : "la diversité culturelle",
     },
     {
-        question : "l'Union europééenne mène des actions militaires ... :",
-        answers : ["au Pakistan ?", "en Macédoine du Nord ?", "en Ukraine ?", "en Bosnie ?"],
-        correctAnswer : "en Ukraine ?",
+        question : "Où l'Union européenne mène t-elle des actions militaires ?",
+        answers : ["au Pakistan ", "en Macédoine du Nord ", "en Ukraine ", "en Bosnie "],
+        correctAnswer : "en Ukraine ",
         },
     {
         question : "Quelle est la personne la plus riche d'Europe ?",
