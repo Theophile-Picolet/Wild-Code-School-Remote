@@ -9,31 +9,27 @@
 
 a {
   color: inherit;
-}
-
-a:hover {
   text-decoration: none;
 }
 
 .header {
-    padding-top: 1rem;
-    background: #018c9b;
+    padding: 1rem;
+    background: linear-gradient(#006d79, #018c9b7d);
     height: 19rem;
     width: auto;
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
-        gap: 15rem;
+        justify-content: space-between;
         width: 100%;
         color: #F9EDC8;
         padding-bottom: 1rem;
         .logo {
             background-image: url(./Logo.png);
             opacity: 0.7;
-            width:4rem;
-            height: 4rem;
+            width:5rem;
+            height: 5rem;
             background-size: 100%;
             background-position: center;
             box-shadow: rgba(5, 5, 5, 0.372) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.172) 0px -6px 0px inset;
@@ -113,12 +109,12 @@ a:hover {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 500;
   color: #f9edc8;
-  text-shadow: #544135 5px 5px, #4f3f34 -5px 5px, #4f3f34 -5px -5px,
-    #4f3f4f 5px -5px;
-  letter-spacing: 10px;
+  text-shadow: #544135 6px 6px, #4f3f34  6px 6px, #4f3f34  6px  6px,
+  #4f3f4f 6px  6px;
+letter-spacing: 10px;
 }
 
 .main {
@@ -228,6 +224,7 @@ section {
         }
 }
 
+
     .europe {
         background-image: url(./Paris.jpg);
         background-size: 100%;
@@ -258,18 +255,18 @@ section {
         background-attachment: cover;
         background-position: center;
     }
-}
+
 
     .footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #018c9b;
+        background: linear-gradient(#018c9b5c, #006d79);
         color:#F9EDC8 ;
         height: 5rem;
     }
 
-    @media only screen and (min-width:68.5vh) {
+    @media only screen and (min-width:700px) {
  
         
         .header {

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.header {
+    padding-top: 0;
+    background: linear-gradient(#006d79, #018c9b7d);
+    height: 12rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        color: #f9edc8;
+        text-shadow: #544135 7px 7px, #4f3f34  7px 7px, #4f3f34  7px  7px,
+          #4f3f4f 7px  7px;
+        letter-spacing: 7px;
+    }
+        nav {
+        padding-bottom: 0rem;
+            .logo {
+            background-image: url(./Logo.png);
+            opacity: 0.7;
+            width:4rem;
+            height: 4rem;
+            background-size: 100%;
+            background-position: center;
+            box-shadow: rgba(5, 5, 5, 0.372) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.172) 0px -6px 0px inset;
+            border-radius: 100%;
+                }     
+            }
+        }
+
+ .main {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./WorldMap.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-position: fixed;
+  }
+
+
+.Quizz {
+    margin: 0;
+    height: auto;
+    width: 400px;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid #4f3f34;
+    border-radius: 50px;
+    background: #f9edc8c3;
+    margin: 5rem auto;
+    }
+
+    .title {
+        width: 400px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 8rem;
+        text-align: center;
+        padding-top: 2rem;
+        color: #4f3f34;
+        font-size: 3rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+
+    }
+    .reponse {
+        min-width: 400px;
+        height: 12rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        padding: 0 4rem;
+        justify-items: center;
+        align-items: center;
+        
+        button {
+            height: 5rem;
+            width: 7rem;
+            background: #4f3f34;
+            border-radius: 15px;
+            box-shadow: rgba(5, 5, 5, 0.318) 0px 4px 8px, rgba(0, 0, 0, 0.27) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset;
+            color: #F9EDC8;
+        }
+    }
+    .aside {
+        min-width: 400px;
+    height: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    }
+   
+    .end {
+        min-height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titleEnd h2 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        font-size: 6rem;
+        letter-spacing: 4px;
+        text-align: center;
+        line-height: 6rem;
+    }
+
+    .scorefinal, .messageScoreFinal {
+        margin-top: rem;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+ 
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#018c9b5c, #006d79);
+        color:#F9EDC8 ;
+        height: 5rem;
+    }
+
+    @media only screen and (min-width:700px) {
+        
+        .header {
+            height: 15rem;
+            width: auto;
+            }
+         
+
+         h1 {
+            font-size: 6rem;
+            font-weight: 500;
+            letter-spacing: 10px;
+            padding: 0;
+         }
+        
+        .Quizz {
+            width: 550px;
+        }
+
+        .reponse {
+            gap: 2rem;
+            padding: 0;
+        }
+
+        .reponse button {
+            height: 4rem;
+            width: 10rem; 
+        }
+    }
+        
+        
+    
+    
