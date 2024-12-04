@@ -7,6 +7,12 @@ sectioneurope.addEventListener('mouseover', function(){
         sectioneurope.style.scale = 1;})
 });
 
+const logo = document.querySelector(".logo img");
+logo.addEventListener("mouseover", function() {
+    logo.style.scale =1.3;});
+    logo.addEventListener("mouseleave", function() {
+        logo.style.scale = 1;});
+            
 const sectionafrica = document.querySelector(".africa");
 sectionafrica.addEventListener('mouseover', function(){
     sectionafrica.style.filter = 'blur(1px)';

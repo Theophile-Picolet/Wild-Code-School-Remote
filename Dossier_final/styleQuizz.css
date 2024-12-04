@@ -9,7 +9,7 @@
 
 .header {
     padding-top: 0;
-    background: linear-gradient(#006d79, #018c9b7d);
+    background: linear-gradient(#00162e, #00234b95);
     height: 12rem;
     width: auto;
     display: flex;
@@ -20,8 +20,8 @@
         font-size: 4rem;
         font-weight: 500;
         color: #f9edc8;
-        text-shadow: #544135 7px 7px, #4f3f34  7px 7px, #4f3f34  7px  7px,
-          #4f3f4f 7px  7px;
+        text-shadow: #00162e 4px 4px, #00162e  4px 4px, #00162e  4px  4px,
+    #00162e 4px  4px;
         letter-spacing: 7px;
     }
         nav {
@@ -43,10 +43,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(./WorldMap.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-position: fixed;
+    background-image: linear-gradient(#00234b5b, #00234b5b), url(./background_projet1.jpeg);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
   }
 
 
@@ -114,14 +114,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-         border: 3px solid #4f3f34;
-    border-radius: 50px;
-    background: linear-gradient(#006d7915, #018c9be1);
+         border: 4px solid #f9f9f9;
+    border-radius: 50%;
+    background: linear-gradient(#00234b5b, #00234b5b);
     }
     .titleEnd h2 {
         padding-top: 5rem;
         padding-bottom: 5rem;
-        font-size: 6rem;
+        font-size: 5rem;
         letter-spacing: 4px;
         text-align: center;
         line-height: 6rem;
@@ -131,23 +131,24 @@
     }
 
     .scorefinal, .messageScoreFinal {
-        margin-top: rem;
+        margin-top: 1rem;
         font-size: 2rem;
         text-align: center;
         font-weight: bold;
-        color: #4f3f34;
-        text-shadow: #F9EDC8 7px 7px, #F9EDC8  7px 7px, #F9EDC8  7px  7px,
-          #F9EDC8 7px  7px;
+        color: #f9edc8;
+        text-shadow: #544135 3px 3px, #544135  3px 3px, #544135 3px 3px,
+          #544135 3px  3px;
     }
  
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(#018c9b5c, #006d79);
-        color:#F9EDC8 ;
-        height: 5rem;
-    }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                 background: linear-gradient(#00234b7b, #001732);
+            color:#F9EDC8 ;
+            height: 5rem;
+        }
+    
 
     @media only screen and (min-width:700px) {
         

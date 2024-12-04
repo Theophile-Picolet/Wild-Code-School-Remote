@@ -1,3 +1,9 @@
+const logo = document.querySelector(".logo img");
+logo.addEventListener("mouseover", function() {
+    logo.style.scale =1.3;});
+    logo.addEventListener("mouseleave", function() {
+        logo.style.scale = 1;});
+        
 const questionsAsia = [
     {
         question : "Quel est le plat préféré des Asiatiques ?",
@@ -31,6 +37,8 @@ function displayQuestionAsia() {
         messageScoreFinal.innerText = "Votre score est de :";
         let scoreFinal= document.querySelector(".scorefinal");
         scoreFinal.innerText = `${score} /3`;
+        let end = document.querySelector(".end");
+        end.style.width ="70ch";
     };
 
   
